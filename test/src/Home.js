@@ -40,9 +40,9 @@ const Home = () => {
         console.log(name);
     }, [name]); //do this to add dependency, by now, console log will only run when first launch, and when the variable (in this case name) changes
 
-    // useEffect(() => {
-    //     console.log("Nyahallo");
-    // }, []); Add this array if want the function to only run when the app initially launch
+    useEffect(() => {
+        console.log("Nyahallo Initial Run");
+    }, []); //Add this array if want the function to only run when the app initially launch
 
     return (
         <div className="home">
